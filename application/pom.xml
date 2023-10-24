@@ -4,7 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- TODO: Définir les coordonnées de l'artefact -->
+    <groupId>fr.maven.express</groupId>
+    <artifactId>maven-express-app</artifactId>
+    <version>0.0.1</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -12,7 +14,12 @@
     </properties>
 
     <dependencies>
-        <!-- TODO: Ajouter une dépendance au framework JUnit -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.10.0</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
 
