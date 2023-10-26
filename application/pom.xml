@@ -7,6 +7,9 @@
     <groupId>fr.maven.express</groupId>
     <artifactId>maven-express-app</artifactId>
     <version>0.0.1</version>
+    <!--  TODO: Déclarer le type de packaging approprié pour le pom parent ("jar" si non spécifié) -->
+
+    <!--  TODO: Lister les modules enfants  -->
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -22,6 +25,14 @@
         </dependency>
     </dependencies>
 
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.2</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>
 
