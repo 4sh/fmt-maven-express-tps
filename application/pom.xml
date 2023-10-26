@@ -7,9 +7,12 @@
     <groupId>fr.maven.express</groupId>
     <artifactId>maven-express-app</artifactId>
     <version>0.0.1</version>
-    <!--  TODO: Déclarer le type de packaging approprié pour le pom parent ("jar" si non spécifié) -->
+    <packaging>pom</packaging>
 
-    <!--  TODO: Lister les modules enfants  -->
+    <modules>
+        <module>module1</module>
+        <module>module2</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
