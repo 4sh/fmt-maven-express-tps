@@ -5,13 +5,14 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-class MyClassTest {
+class MyModule1ClassTest {
+
+    private final MyModule1Class myClass = new MyModule1Class();
 
     @Test
     void displayCurrentJavaVersion() {
         // Given
         int i = 0;
-        MyClass myClass = new MyClass();
         // When
         int nextInt = myClass.getNextInt(i);
         // Then
